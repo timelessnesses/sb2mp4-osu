@@ -1,4 +1,3 @@
-# i love debugging this
 import sys
 import os
 import json
@@ -1279,7 +1278,7 @@ files = parser.parse_args().osb_folder.strip("\'\"") + "\\"
 osbfile = None
 for file in os.listdir(files):
     if file.endswith(".osb"):
-        osbfile = files+file
+        osbfile = file
         break
 if osbfile is None:
     print("No .osb file found")
