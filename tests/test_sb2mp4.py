@@ -1,5 +1,7 @@
-import pytest
 import os
+
+import pytest
+
 
 def test():
     if os.system(r"sb2mp4.py 'tests\test_bm' ") != 0:
